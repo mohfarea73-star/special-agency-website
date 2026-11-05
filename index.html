@@ -1,66 +1,208 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>وكالة سبيشل👑 | SPECIAL AGENCY</title>
-<meta name="description" content="تعرّف على وكالة سبيشل وآلية الانضمام للمواهب المهتمة بالبث المباشر على BIGO LIVE.">
-<style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#100d14;color:#fff;line-height:1.9}
-header{padding:20px 6%;border-bottom:1px solid #d6b36a;display:flex;justify-content:center;text-align:center}
-.brand{color:#d6b36a;font-weight:bold;font-size:20px}
-.hero{text-align:center;padding:70px 7%;background:radial-gradient(ellipse at top,#542078,#21102d 55%,#100d14)}
-h1{font-size:clamp(30px,6vw,48px);line-height:1.5}
-h1 span,h2{color:#d6b36a}
-.hero p{max-width:680px;margin:20px auto;color:#e1d9e8}
-.btn{display:inline-block;padding:12px 24px;margin:8px;border-radius:7px;background:#d6b36a;color:#17101c;text-decoration:none;font-weight:bold}
-main{max-width:950px;margin:auto;padding:35px 6%}
-section{margin-bottom:38px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}
-.card{background:#1c1622;border:1px solid #d6b36a66;border-radius:10px;padding:20px}
-.card h3{color:#d6b36a}
-.card p,li{color:#ddd3e5}
-.contact{text-align:center;padding:25px;background:#281536;border:1px solid #d6b36a;border-radius:12px}
-footer{text-align:center;padding:22px;color:#c9bdcf;border-top:1px solid #ffffff22;font-size:13px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b1b">
+  <meta name="description" content="وكالة سبيشل👑 | SPECIAL AGENCY — ابدأ الانضمام الآن عبر BIGO LIVE أو تواصل مع الإدارة.">
+  <meta name="color-scheme" content="dark">
+  <title>وكالة سبيشل👑 | SPECIAL AGENCY</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #100b1b;
+      --surface: #1b1129;
+      --surface-soft: #241632;
+      --purple: #7040a0;
+      --gold: #d8b66d;
+      --gold-light: #f0d99f;
+      --text: #fffaf0;
+      --muted: #c9bfd2;
+      --whatsapp: #25d366;
+      --line: rgba(216, 182, 109, .28);
+    }
+
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--bg); }
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(112, 64, 160, .22), transparent 54%),
+        var(--bg);
+      font-family: Tahoma, Arial, sans-serif;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a { -webkit-tap-highlight-color: transparent; }
+    .site-header {
+      width: 100%;
+      padding: 25px 20px 21px;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand-name {
+      display: inline-block;
+      color: var(--gold-light);
+      font-size: clamp(19px, 4.8vw, 25px);
+      font-weight: 800;
+      letter-spacing: .1px;
+    }
+    .brand-rule {
+      width: 54px;
+      height: 2px;
+      margin: 12px auto 0;
+      border-radius: 2px;
+      background: var(--gold);
+      opacity: .85;
+    }
+
+    main {
+      width: 100%;
+      max-width: 720px;
+      margin: auto;
+      padding: 42px 20px 48px;
+      text-align: center;
+    }
+    .hero-panel {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(30px, 7vw, 52px) clamp(18px, 5vw, 38px);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: linear-gradient(155deg, rgba(73, 39, 103, .78), rgba(31, 18, 46, .96) 58%, rgba(20, 13, 30, .98));
+      box-shadow: 0 18px 55px rgba(0, 0, 0, .24);
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--gold-light);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .7px;
+    }
+    h1 {
+      margin: 0;
+      color: var(--text);
+      font-size: clamp(27px, 7vw, 43px);
+      line-height: 1.5;
+      font-weight: 800;
+    }
+    h1 span { color: var(--gold-light); }
+    .intro {
+      max-width: 480px;
+      margin: 15px auto 0;
+      color: var(--muted);
+      font-size: clamp(14px, 3.8vw, 16px);
+    }
+    .actions {
+      display: grid;
+      gap: 13px;
+      width: 100%;
+      max-width: 390px;
+      margin: 31px auto 0;
+    }
+    .btn {
+      min-height: 58px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 11px;
+      padding: 13px 18px;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      font: inherit;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.5;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color .16s ease, border-color .16s ease, transform .16s ease;
+    }
+    .btn-primary {
+      color: #21152b;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      box-shadow: 0 7px 22px rgba(216, 182, 109, .13);
+    }
+    .btn-primary:hover { background: #f5dfa9; }
+    .btn-secondary {
+      color: var(--text);
+      border-color: rgba(37, 211, 102, .62);
+      background: rgba(37, 211, 102, .07);
+    }
+    .btn-secondary:hover { background: rgba(37, 211, 102, .13); }
+    .btn svg { width: 23px; height: 23px; flex: 0 0 23px; }
+    .btn-secondary svg { color: var(--whatsapp); }
+    .btn:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+
+    .site-footer {
+      padding: 19px 16px 22px;
+      border-top: 1px solid rgba(255, 255, 255, .09);
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+    .copyright-name { color: var(--gold-light); font-weight: 700; }
+    .rights { display: block; margin-top: 3px; }
+
+    @media (max-width: 420px) {
+      .site-header { padding-top: 20px; padding-bottom: 18px; }
+      main { padding: 28px 15px 34px; }
+      .hero-panel { border-radius: 17px; }
+      .btn { min-height: 56px; padding-inline: 12px; font-size: 15px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
 </head>
 <body>
-<header><div class="brand">وكالة سبيشل👑 | SPECIAL AGENCY</div></header>
-<div class="hero">
-<p>مرحبًا بك في عالم المواهب وصناعة المحتوى</p>
-<h1>اكتشف فرصتك مع <span>سبيشل👑</span></h1>
-<p>تعرّف على آلية الانضمام إلى الوكالة، وخطوات التسجيل، والإرشادات المتاحة للمواهب المهتمة بالبث المباشر على BIGO LIVE.</p>
-<a class="btn" href="https://linktr.ee/SpecialAgency.Official">تواصل مع الإدارة</a>
-<a class="btn" href="#join">خطوات الانضمام</a>
-</div>
-<main>
-<section>
-<h2>من نحن؟</h2>
-<p>وكالة سبيشل👑 | SPECIAL AGENCY تهدف إلى استقطاب المواهب المهتمة بالبث المباشر، وتوضيح إجراءات الانضمام ومساندة المذيعين في فهم متطلبات العمل على المنصة.</p>
-</section>
-<section>
-<h2>ما الذي نقدّمه؟</h2>
-<div class="cards">
-<div class="card"><h3>إرشاد التسجيل</h3><p>توضيح خطوات التسجيل ومتطلبات الانضمام.</p></div>
-<div class="card"><h3>التوجيه والتطوير</h3><p>إرشادات لتحسين أسلوب البث والتفاعل مع الجمهور.</p></div>
-<div class="card"><h3>التواصل مع الإدارة</h3><p>قناة للاستفسار عن الإجراءات والسياسات المعتمدة.</p></div>
-</div>
-</section>
-<section id="join">
-<h2>كيف تنضم إلى الوكالة؟</h2>
-<ol>
-<li>تواصل مع الإدارة وأبدِ رغبتك في الانضمام.</li>
-<li>اطّلع على متطلبات التسجيل والإجراءات.</li>
-<li>أكمل بيانات التسجيل الرسمية بدقة.</li>
-<li>تابع مع الإدارة بشأن الخطوات التالية.</li>
-</ol>
-</section>
-<section class="contact">
-<h2>هل ترغب في الانضمام؟</h2>
-<p>تواصل مع الإدارة للاستفسار عن التسجيل وآلية العمل.</p>
-<a class="btn" href="https://linktr.ee/SpecialAgency.Official">التواصل مع الإدارة</a>
-</section>
-</main>
-<footer>© وكالة سبيشل👑 | SPECIAL AGENCY — جميع الحقوق محفوظة<br>لا توجد ضمانات لأرباح أو نتائج محددة.</footer>
+  <header class="site-header">
+    <div class="brand-name">وكالة سبيشل👑 | SPECIAL AGENCY</div>
+    <div class="brand-rule" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="hero-panel" aria-labelledby="main-heading">
+      <p class="eyebrow">نكتشف المواهب… نطوّر القدرات… ونصنع النجوم</p>
+      <h1 id="main-heading">ابدأ رحلتك مع <span>سبيشل👑</span></h1>
+      <p class="intro">خطوتك الأولى نحو صناعة حضورك والانطلاق عبر BIGO LIVE تبدأ من هنا.</p>
+
+      <div class="actions">
+        <a class="btn btn-primary"
+           href="https://dnf4twa.s.gy/انضم-إلينا"
+           aria-label="ابدأ الانضمام الآن عبر BIGO LIVE">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none">
+            <rect x="3" y="5" width="18" height="14" rx="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 9v6l5-3-5-3Z" fill="currentColor"/>
+          </svg>
+          <span>ابدأ الانضمام الآن عبر BIGO LIVE</span>
+        </a>
+
+        <a class="btn btn-secondary"
+           href="https://wa.me/SpecialAgency.Official"
+           aria-label="تواصل مع الإدارة عبر واتساب">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+            <path d="M20.52 3.48A11.82 11.82 0 0 0 12.1 0C5.55 0 .22 5.32.22 11.87c0 2.09.55 4.13 1.59 5.93L.12 24l6.35-1.66a11.9 11.9 0 0 0 5.63 1.43h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.15-3.47-8.41ZM12.11 21.75a9.86 9.86 0 0 1-5.02-1.37l-.36-.21-3.77.99 1.01-3.67-.23-.38a9.84 9.84 0 1 1 8.37 4.64Zm5.4-7.37c-.3-.15-1.77-.87-2.05-.97-.28-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.5 1.69.64.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+          </svg>
+          <span>تواصل مع الإدارة</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="copyright-name">© <span id="copyright-year">2026</span> وكالة سبيشل👑 | SPECIAL AGENCY</span>
+    <span class="rights">جميع الحقوق محفوظة.</span>
+  </footer>
+
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
