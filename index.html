@@ -88,12 +88,12 @@
     }
     h1 {
       margin: 0;
-      color: var(--text);
+      color: var(--gold);
       font-size: clamp(27px, 7vw, 43px);
       line-height: 1.5;
       font-weight: 800;
     }
-    h1 span { color: var(--gold-light); }
+    h1 span { color: var(--gold); }
     .intro {
       max-width: 480px;
       margin: 15px auto 0;
@@ -147,8 +147,21 @@
       font-size: 12px;
       text-align: center;
     }
-    .copyright-name { color: var(--gold-light); font-weight: 700; }
-    .rights { display: block; margin-top: 3px; }
+    .copyright-name {
+      display: block;
+      color: var(--gold);
+      font-weight: 700;
+    }
+    .rights {
+      display: block;
+      margin-top: 3px;
+      color: #ffffff;
+    }
+    .copyright-year {
+      display: block;
+      margin-top: 3px;
+      color: #ffffff;
+    }
 
     @media (max-width: 420px) {
       .site-header { padding-top: 20px; padding-bottom: 18px; }
@@ -197,8 +210,9 @@
   </main>
 
   <footer class="site-footer">
-    <span class="copyright-name">© <span id="copyright-year">2026</span> وكالة سبيشل👑 | SPECIAL AGENCY</span>
+    <span class="copyright-name">وكالة سبيشل👑 | SPECIAL AGENCY</span>
     <span class="rights">جميع الحقوق محفوظة.</span>
+    <span class="copyright-year">© <span id="copyright-year">2026</span></span>
   </footer>
 
   <script>
