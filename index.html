@@ -1,66 +1,241 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>وكالة سبيشل👑 | SPECIAL AGENCY</title>
-<meta name="description" content="تعرّف على وكالة سبيشل وآلية الانضمام للمواهب المهتمة بالبث المباشر على BIGO LIVE.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0910">
+<title>وكالة سبيشل | SPECIAL AGENCY</title>
+<meta name="description" content="SPECIAL AGENCY وكالة مستقلة تعرّف المواهب المهتمة بالبث المباشر بآلية الانضمام وخطواته. الخدمة مخصصة للبالغين 18+ فقط.">
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#100d14;color:#fff;line-height:1.9}
-header{padding:20px 6%;border-bottom:1px solid #d6b36a;display:flex;justify-content:center;text-align:center}
-.brand{color:#d6b36a;font-weight:bold;font-size:20px}
-.hero{text-align:center;padding:70px 7%;background:radial-gradient(ellipse at top,#542078,#21102d 55%,#100d14)}
-h1{font-size:clamp(30px,6vw,48px);line-height:1.5}
-h1 span,h2{color:#d6b36a}
-.hero p{max-width:680px;margin:20px auto;color:#e1d9e8}
-.btn{display:inline-block;padding:12px 24px;margin:8px;border-radius:7px;background:#d6b36a;color:#17101c;text-decoration:none;font-weight:bold}
-main{max-width:950px;margin:auto;padding:35px 6%}
-section{margin-bottom:38px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}
-.card{background:#1c1622;border:1px solid #d6b36a66;border-radius:10px;padding:20px}
-.card h3{color:#d6b36a}
-.card p,li{color:#ddd3e5}
-.contact{text-align:center;padding:25px;background:#281536;border:1px solid #d6b36a;border-radius:12px}
-footer{text-align:center;padding:22px;color:#c9bdcf;border-top:1px solid #ffffff22;font-size:13px}
+:root{
+  --black:#0b0910;
+  --ink:#15101f;
+  --royal:#4b1f8f;
+  --royal-deep:#26104d;
+  --gold:#d6b36a;
+  --gold-hi:#f0d18a;
+  --white:#fff;
+  --soft:#dcd3e6;
+  --muted:#b9adc6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;
+  line-height:1.85;
+}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold-hi);outline-offset:3px}
+.wrap{width:100%;max-width:880px;margin:0 auto;padding:0 20px}
+
+/* الشريط العلوي */
+.top{
+  border-bottom:1px solid rgba(214,179,106,.45);
+  padding:14px 0;
+}
+.top .wrap{display:flex;align-items:baseline;justify-content:center;gap:10px;flex-wrap:wrap}
+.name{color:var(--gold);font-weight:700;font-size:19px;letter-spacing:2px;direction:ltr}
+.name-ar{color:var(--soft);font-size:15px}
+
+/* المقدمة */
+.hero{
+  text-align:center;
+  padding:64px 0 56px;
+  background:linear-gradient(180deg,var(--royal-deep) 0%,var(--black) 100%);
+}
+.hero h1{
+  font-size:clamp(30px,8vw,52px);
+  line-height:1.4;
+  margin-bottom:16px;
+}
+.hero h1 span{color:var(--gold)}
+.hero p{max-width:560px;margin:0 auto 26px;color:var(--soft);font-size:17px}
+.btn{
+  display:inline-block;
+  min-height:48px;
+  padding:12px 34px;
+  border-radius:10px;
+  background:var(--gold);
+  color:#1a1224;
+  font-weight:700;
+  font-size:18px;
+  text-decoration:none;
+}
+.btn:hover,.btn:active{background:var(--gold-hi)}
+.age{margin:16px auto 0;font-size:14px;color:var(--muted)}
+.hero .age{max-width:none}
+
+/* الأقسام */
+section{padding:44px 0}
+h2{color:var(--gold);font-size:26px;line-height:1.5;margin-bottom:20px;text-align:center}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+.card{
+  background:var(--ink);
+  border:1px solid rgba(214,179,106,.35);
+  border-radius:12px;
+  padding:18px 18px 16px;
+}
+.card h3{color:var(--gold-hi);font-size:18px;margin-bottom:4px}
+.card p{color:var(--soft);font-size:15px}
+
+.steps{list-style:none;counter-reset:s;display:grid;gap:12px}
+.steps li{
+  counter-increment:s;
+  position:relative;
+  background:var(--ink);
+  border:1px solid rgba(214,179,106,.35);
+  border-radius:12px;
+  padding:14px 62px 14px 16px;
+  color:var(--soft);
+}
+.steps li::before{
+  content:counter(s);
+  position:absolute;
+  top:50%;
+  right:14px;
+  transform:translateY(-50%);
+  width:34px;height:34px;
+  border-radius:50%;
+  background:var(--royal);
+  color:var(--gold-hi);
+  font-weight:700;
+  line-height:34px;
+  text-align:center;
+}
+
+/* الأسئلة الشائعة بدون JavaScript */
+details{
+  background:var(--ink);
+  border:1px solid rgba(214,179,106,.35);
+  border-radius:12px;
+  margin-bottom:10px;
+}
+summary{
+  cursor:pointer;
+  padding:14px 16px;
+  font-weight:700;
+  color:var(--gold-hi);
+  list-style-position:inside;
+}
+details p{padding:0 16px 14px;color:var(--soft);font-size:15px}
+
+.final{
+  text-align:center;
+  background:linear-gradient(180deg,var(--black),var(--royal-deep));
+  border-top:1px solid rgba(214,179,106,.35);
+}
+.final p{max-width:520px;margin:0 auto 22px;color:var(--soft)}
+
+/* التذييل */
+footer{
+  text-align:center;
+  padding:28px 0 34px;
+  border-top:1px solid rgba(255,255,255,.12);
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.9;
+}
+footer nav{margin-bottom:12px;font-size:15px}
+footer nav a{color:var(--gold);padding:8px 10px;display:inline-block}
+footer p+p{margin-top:2px}
+
+@media (min-width:640px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .hero{padding:84px 0 72px}
+}
+@media (min-width:960px){
+  .grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header><div class="brand">وكالة سبيشل👑 | SPECIAL AGENCY</div></header>
-<div class="hero">
-<p>مرحبًا بك في عالم المواهب وصناعة المحتوى</p>
-<h1>اكتشف فرصتك مع <span>سبيشل👑</span></h1>
-<p>تعرّف على آلية الانضمام إلى الوكالة، وخطوات التسجيل، والإرشادات المتاحة للمواهب المهتمة بالبث المباشر على BIGO LIVE.</p>
-<a class="btn" href="https://linktr.ee/SpecialAgency.Official">تواصل مع الإدارة</a>
-<a class="btn" href="#join">خطوات الانضمام</a>
-</div>
+
+<header class="top">
+  <div class="wrap">
+    <span class="name">SPECIAL AGENCY</span>
+    <span class="name-ar">وكالة سبيشل</span>
+  </div>
+</header>
+
 <main>
-<section>
-<h2>من نحن؟</h2>
-<p>وكالة سبيشل👑 | SPECIAL AGENCY تهدف إلى استقطاب المواهب المهتمة بالبث المباشر، وتوضيح إجراءات الانضمام ومساندة المذيعين في فهم متطلبات العمل على المنصة.</p>
-</section>
-<section>
-<h2>ما الذي نقدّمه؟</h2>
-<div class="cards">
-<div class="card"><h3>إرشاد التسجيل</h3><p>توضيح خطوات التسجيل ومتطلبات الانضمام.</p></div>
-<div class="card"><h3>التوجيه والتطوير</h3><p>إرشادات لتحسين أسلوب البث والتفاعل مع الجمهور.</p></div>
-<div class="card"><h3>التواصل مع الإدارة</h3><p>قناة للاستفسار عن الإجراءات والسياسات المعتمدة.</p></div>
-</div>
-</section>
-<section id="join">
-<h2>كيف تنضم إلى الوكالة؟</h2>
-<ol>
-<li>تواصل مع الإدارة وأبدِ رغبتك في الانضمام.</li>
-<li>اطّلع على متطلبات التسجيل والإجراءات.</li>
-<li>أكمل بيانات التسجيل الرسمية بدقة.</li>
-<li>تابع مع الإدارة بشأن الخطوات التالية.</li>
-</ol>
-</section>
-<section class="contact">
-<h2>هل ترغب في الانضمام؟</h2>
-<p>تواصل مع الإدارة للاستفسار عن التسجيل وآلية العمل.</p>
-<a class="btn" href="https://linktr.ee/SpecialAgency.Official">التواصل مع الإدارة</a>
-</section>
+  <div class="hero">
+    <div class="wrap">
+      <h1>ابدأ طريقك في البث المباشر مع <span>سبيشل</span></h1>
+      <p>وكالة مستقلة تشرح لك خطوات الانضمام بوضوح، وترافقك بالإرشاد والمتابعة منذ البداية.</p>
+      <a class="btn" href="https://dnf4twa.s.gy/انضم-إلينا" target="_blank" rel="noopener noreferrer">انضم الآن</a>
+      <p class="age">الخدمة مخصصة للبالغين 18+ فقط.</p>
+    </div>
+  </div>
+
+  <section id="why">
+    <div class="wrap">
+      <h2>لماذا تنضم إلينا؟</h2>
+      <div class="grid">
+        <div class="card"><h3>إرشاد واضح</h3><p>شرح مبسّط لخطوات التسجيل والمتطلبات قبل أن تبدأ.</p></div>
+        <div class="card"><h3>توجيه وتطوير</h3><p>نصائح لتحسين أسلوب البث والتفاعل مع جمهورك.</p></div>
+        <div class="card"><h3>متابعة من الإدارة</h3><p>قناة تواصل للاستفسار عن الإجراءات والسياسات المعتمدة.</p></div>
+        <div class="card"><h3>عمل منظّم</h3><p>إجراءات معلنة تساعدك على فهم آلية العمل من اليوم الأول.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps">
+    <div class="wrap">
+      <h2>خطوات الانضمام</h2>
+      <ol class="steps">
+        <li>اضغط على زر «انضم الآن» لفتح صفحة الانضمام.</li>
+        <li>اتبع تعليمات التسجيل وأكمل بياناتك بدقة.</li>
+        <li>تأكد من أن معلوماتك صحيحة ومطابقة لشروط المنصة.</li>
+        <li>تواصل مع الإدارة إن احتجت إلى مساعدة في أي خطوة.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>الأسئلة الشائعة</h2>
+      <details>
+        <summary>من يمكنه الانضمام؟</summary>
+        <p>الخدمة مخصصة للبالغين 18 عامًا فأكثر فقط. يجب الالتزام بشروط المنصة، ولا يُسمح بتقديم معلومات عمرية غير صحيحة.</p>
+      </details>
+      <details>
+        <summary>هل هناك ضمان للأرباح؟</summary>
+        <p>لا. لا توجد ضمانات لأرباح أو نتائج محددة، وتختلف النتائج من شخص إلى آخر.</p>
+      </details>
+      <details>
+        <summary>هل هذا الموقع هو الموقع الرسمي للمنصة؟</summary>
+        <p>لا. هذا الموقع تابع لوكالة SPECIAL AGENCY وليس الموقع الرسمي لأي منصة.</p>
+      </details>
+      <details>
+        <summary>كيف أتواصل مع الإدارة؟</summary>
+        <p>من خلال رابط التواصل في أسفل الصفحة.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final" id="join">
+    <div class="wrap">
+      <h2>جاهز للبدء؟</h2>
+      <p>خطوة واحدة تفصلك عن صفحة الانضمام.</p>
+      <a class="btn" href="https://dnf4twa.s.gy/انضم-إلينا" target="_blank" rel="noopener noreferrer">انضم الآن</a>
+    </div>
+  </section>
 </main>
-<footer>© وكالة سبيشل👑 | SPECIAL AGENCY — جميع الحقوق محفوظة<br>لا توجد ضمانات لأرباح أو نتائج محددة.</footer>
+
+<footer>
+  <div class="wrap">
+    <nav aria-label="روابط التواصل">
+      <a href="https://linktr.ee/SpecialAgency.Official" target="_blank" rel="noopener noreferrer">تواصل مع الإدارة</a>
+    </nav>
+    <p>هذا الموقع تابع لوكالة SPECIAL AGENCY وليس الموقع الرسمي لأي منصة.</p>
+    <p>© وكالة سبيشل | SPECIAL AGENCY</p>
+    <p>جميع الحقوق محفوظة</p>
+    <p>2026</p>
+  </div>
+</footer>
+
 </body>
 </html>
